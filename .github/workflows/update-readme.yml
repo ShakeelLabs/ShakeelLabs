@@ -1,0 +1,134 @@
+name: Update Profile README
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Update public repositories section
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          owner = "ShakeelLabs"
+          readme_path = "README.md"
+
+          url = f"https://api.github.com/users/{owner}/repos?per_page=100&type=owner&sort=name"
+          req = urllib.request.Request(
+              url,
+              headers={
+                  "Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}",
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "User-Agent": owner,
+              },
+          )
+
+          with urllib.request.urlopen(req) as response:
+              repos = json.load(response)
+
+          public_repos = [
+              r for r in repos
+              if not r.get("private", True)
+              and r.get("name") != owner
+              and not r.get("archived", False)
+          ]
+
+          projects = {
+              "india-post-office-finder": (
+                  "India Post Office Finder",
+                  "Find PIN codes & post offices",
+                  "🇮🇳 Utility",
+              ),
+              "islamic-knowledge": (
+                  "Islamic Knowledge",
+                  "Quran, Hadith, Duas & Sunnah",
+                  "☪️ Knowledge",
+              ),
+              "tiny-trader": (
+                  "Tiny Trader",
+                  "Interactive trading learning game",
+                  "🎮 Education",
+              ),
+              "xauusd-ai-terminal": (
+                  "XAUUSD AI Terminal",
+                  "AI-powered Gold trading dashboard",
+                  "📊 Trading",
+              ),
+              "XAUUSD-Lot-Size-Calculator": (
+                  "XAUUSD Lot Size Calculator",
+                  "Risk-based position sizing",
+                  "🧮 Trading Tool",
+              ),
+              "XTIUSD-Live-News": (
+                  "XTIUSD Live News",
+                  "Live WTI market news & updates",
+                  "📰 Market Data",
+              ),
+              "XTIUSD-Lot-Size-Calculator": (
+                  "XTIUSD Lot Size Calculator",
+                  "Crude Oil lot & swap calculator",
+                  "🧮 Trading Tool",
+              ),
+          }
+
+          def fallback(repo):
+              name = repo["name"]
+              display = name.replace("-", " ")
+              description = (repo.get("description") or "Open-source project").replace("|", "\\|")
+              return display, description, "🧪 Project"
+
+          rows = [
+              "| Project | What it does | Type |",
+              "|---|---|---|",
+          ]
+
+          for repo in public_repos:
+              name = repo["name"]
+              display, description, kind = projects.get(name, fallback(repo))
+              rows.append(f"| **{display}** | {description} | {kind} |")
+
+          new_section = "\n".join(rows)
+
+          with open(readme_path, "r", encoding="utf-8") as f:
+              content = f.read()
+
+          start = "<!-- AUTO_REPOS_START -->"
+          end = "<!-- AUTO_REPOS_END -->"
+
+          if start not in content or end not in content:
+              raise SystemExit("README markers not found")
+
+          before = content.split(start, 1)[0]
+          after = content.split(end, 1)[1]
+          updated = before + start + "\n" + new_section + "\n" + end + after
+
+          with open(readme_path, "w", encoding="utf-8") as f:
+              f.write(updated)
+          PY
+
+      - name: Commit updated README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore: update public repositories"
+          git push
