@@ -13,7 +13,7 @@ A personal lab for building, testing and shipping useful digital products, tools
 | **XAUUSD AI Terminal** | AI-powered Gold trading dashboard | Trading | <a href="https://github.com/ShakeelLabs/xauusd-ai-terminal" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/xauusd-ai-terminal/" target="_blank" rel="noopener noreferrer">Live Project</a> |
 | **XAUUSD Lot Size Calculator** | Risk-based position sizing | Trading Tool | <a href="https://github.com/ShakeelLabs/XAUUSD-Lot-Size-Calculator" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/XAUUSD-Lot-Size-Calculator/" target="_blank" rel="noopener noreferrer">Live Project</a> |
 | **XTIUSD Live News** | Live WTI market news & updates | Market Data | <a href="https://github.com/ShakeelLabs/XTIUSD-Live-News" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/XTIUSD-Live-News/" target="_blank" rel="noopener noreferrer">Live Project</a> |
-| **XTIUSD Lot Size Calculator** | Crude Oil lot & swap calculator | Trading Tool | <a href="https://github.com/ShakeelLabs/XTIUSD-Lot-Size-Calculator" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/XTIUSD-Lot-Size-Calculator/" target="_blank" rel="noopener noreferrer">Live Project</a> |
+| **XTIUSD Lot Size Calculator** | Crude Oil lot & swap calculator | 🧮 Trading Tool | <a href="https://github.com/ShakeelLabs/XTIUSD-Lot-Size-Calculator" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/XTIUSD-Lot-Size-Calculator/" target="_blank" rel="noopener noreferrer">Live Project</a> |
 <!-- AUTO_REPOS_END -->
 
 ## Focus Areas
