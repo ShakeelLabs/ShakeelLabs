@@ -7,13 +7,13 @@ A personal lab for building, testing and shipping useful digital products, tools
 <!-- AUTO_REPOS_START -->
 | Project | What it does | Type | Repository | Live |
 |---|---|---|---|---|
-| **India Post Office Finder** | Find PIN codes & post offices | 🇮🇳 Utility | [Repo](https://github.com/ShakeelLabs/india-post-office-finder) | [Live](https://shakeellabs.github.io/india-post-office-finder/) |
-| **Islamic Knowledge** | Quran, Hadith, Duas & Sunnah | ☪️ Knowledge | [Repo](https://github.com/ShakeelLabs/islamic-knowledge) | [Live](https://shakeellabs.github.io/islamic-knowledge/) |
-| **Tiny Trader** | Interactive trading learning game | 🎮 Education | [Repo](https://github.com/ShakeelLabs/tiny-trader) | [Live](https://marketforgex.github.io/tiny-trader/) |
-| **XAUUSD AI Terminal** | AI-powered Gold trading dashboard | 📊 Trading | [Repo](https://github.com/ShakeelLabs/xauusd-ai-terminal) | [Live](https://shakeellabs.github.io/xauusd-ai-terminal/) |
-| **XAUUSD Lot Size Calculator** | Risk-based position sizing | 🧮 Trading Tool | [Repo](https://github.com/ShakeelLabs/XAUUSD-Lot-Size-Calculator) | [Live](https://shakeellabs.github.io/XAUUSD-Lot-Size-Calculator/) |
-| **XTIUSD Live News** | Live WTI market news & updates | 📰 Market Data | [Repo](https://github.com/ShakeelLabs/XTIUSD-Live-News) | [Live](https://shakeellabs.github.io/XTIUSD-Live-News/) |
-| **XTIUSD Lot Size Calculator** | Crude Oil lot & swap calculator | 🧮 Trading Tool | [Repo](https://github.com/ShakeelLabs/XTIUSD-Lot-Size-Calculator) | [Live](https://shakeellabs.github.io/XTIUSD-Lot-Size-Calculator/) |
+| **India Post Office Finder** | Find PIN codes & post offices | 🇮🇳 Utility | <a href="https://github.com/ShakeelLabs/india-post-office-finder" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/india-post-office-finder/" target="_blank" rel="noopener noreferrer">Live</a> |
+| **Islamic Knowledge** | Quran, Hadith, Duas & Sunnah | ☪️ Knowledge | <a href="https://github.com/ShakeelLabs/islamic-knowledge" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/islamic-knowledge/" target="_blank" rel="noopener noreferrer">Live</a> |
+| **Tiny Trader** | Interactive trading learning game | 🎮 Education | <a href="https://github.com/ShakeelLabs/tiny-trader" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://marketforgex.github.io/tiny-trader/" target="_blank" rel="noopener noreferrer">Live</a> |
+| **XAUUSD AI Terminal** | AI-powered Gold trading dashboard | 📊 Trading | <a href="https://github.com/ShakeelLabs/xauusd-ai-terminal" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/xauusd-ai-terminal/" target="_blank" rel="noopener noreferrer">Live</a> |
+| **XAUUSD Lot Size Calculator** | Risk-based position sizing | 🧮 Trading Tool | <a href="https://github.com/ShakeelLabs/XAUUSD-Lot-Size-Calculator" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/XAUUSD-Lot-Size-Calculator/" target="_blank" rel="noopener noreferrer">Live</a> |
+| **XTIUSD Live News** | Live WTI market news & updates | 📰 Market Data | <a href="https://github.com/ShakeelLabs/XTIUSD-Live-News" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/XTIUSD-Live-News/" target="_blank" rel="noopener noreferrer">Live</a> |
+| **XTIUSD Lot Size Calculator** | Crude Oil lot & swap calculator | 🧮 Trading Tool | <a href="https://github.com/ShakeelLabs/XTIUSD-Lot-Size-Calculator" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/XTIUSD-Lot-Size-Calculator/" target="_blank" rel="noopener noreferrer">Live</a> |
 <!-- AUTO_REPOS_END -->
 
 ## 🧰 Focus Areas
