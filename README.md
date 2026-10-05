@@ -7,6 +7,7 @@ A personal lab for building, testing and shipping useful digital products, tools
 <!-- AUTO_REPOS_START -->
 | Project | What it does | Type | Repository | Live Project |
 |---|---|---|---|---|
+| **ai resume analyzer** | AI-powered resume analyzer for ATS scoring, job matching, keywords, skills and resume improvement. | Project | <a href="https://github.com/ShakeelLabs/ai-resume-analyzer" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/ai-resume-analyzer/" target="_blank" rel="noopener noreferrer">Live Project</a> |
 | **India Post Office Finder** | Find PIN codes & post offices | Utility | <a href="https://github.com/ShakeelLabs/india-post-office-finder" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/india-post-office-finder/" target="_blank" rel="noopener noreferrer">Live Project</a> |
 | **Islamic Knowledge** | Quran, Hadith, Duas & Sunnah | Knowledge | <a href="https://github.com/ShakeelLabs/islamic-knowledge" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/islamic-knowledge/" target="_blank" rel="noopener noreferrer">Live Project</a> |
 | **Tiny Trader** | Interactive trading learning game | Education | <a href="https://github.com/ShakeelLabs/tiny-trader" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="https://shakeellabs.github.io/tiny-trader/" target="_blank" rel="noopener noreferrer">Live Project</a> |
