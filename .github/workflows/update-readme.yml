@@ -107,7 +107,7 @@ jobs:
               repo_url = repo["html_url"]
               live_url = repo.get("homepage") or f"https://{owner.lower()}.github.io/{name}/"
               rows.append(
-                  f"| **{display}** | {description} | {kind} | [Repo]({repo_url}) | [Live]({live_url}) |"
+                  f'| **{display}** | {description} | {kind} | <a href="{repo_url}" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="{live_url}" target="_blank" rel="noopener noreferrer">Live</a> |'
               )
 
           new_section = "\n".join(rows)
