@@ -66,7 +66,7 @@ jobs:
               return repo["name"].replace("-", " "), (repo.get("description") or "Open-source project").replace("|", "\\|"), "🧪 Project"
 
           rows = [
-              "| Project | What it does | Type | Repository | Live Webpage |",
+              "| Project | What it does | Type | Repository | Live Project |",
               "|---|---|---|---|---|",
           ]
 
@@ -76,7 +76,7 @@ jobs:
               repo_url = repo["html_url"]
               live_url = repo.get("homepage") or f"https://{owner.lower()}.github.io/{name}/"
               rows.append(
-                  f'| **{display}** | {description} | {kind} | <a href="{repo_url}" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="{live_url}" target="_blank" rel="noopener noreferrer">Live Webpage</a> |'
+                  f'| **{display}** | {description} | {kind} | <a href="{repo_url}" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="{live_url}" target="_blank" rel="noopener noreferrer">Live Project</a> |'
               )
 
           new_section = "\n".join(rows)
