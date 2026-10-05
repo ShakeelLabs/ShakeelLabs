@@ -19,7 +19,3 @@ A personal lab for building, testing and shipping useful digital products, tools
 ## 🧰 Focus Areas
 
 Trading Tools · AI Experiments · Automation · Web Apps · Digital Products
-
----
-
-**GitHub:** [@ShakeelLabs](https://github.com/ShakeelLabs)
