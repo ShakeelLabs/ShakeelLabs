@@ -1,7 +1,5 @@
 # Welcome to ShakeelLabs 🧪
 
-**Building useful tools, smart systems & digital products.**
-
 A personal lab for building, testing and shipping useful digital products, tools, automation, AI experiments and web applications.
 
 ## 🚀 Featured Projects
