@@ -75,6 +75,8 @@ jobs:
               display, description, kind = projects.get(name, fallback(repo))
               repo_url = repo["html_url"]
               live_url = repo.get("homepage") or f"https://{owner.lower()}.github.io/{name}/"
+              if name == "tiny-trader":
+                  live_url = "https://shakeellabs.github.io/tiny-trader/"
               rows.append(
                   f'| **{display}** | {description} | {kind} | <a href="{repo_url}" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="{live_url}" target="_blank" rel="noopener noreferrer">Live Project</a> |'
               )
