@@ -53,17 +53,17 @@ jobs:
           ]
 
           projects = {
-              "india-post-office-finder": ("India Post Office Finder", "Find PIN codes & post offices", "🇮🇳 Utility"),
-              "islamic-knowledge": ("Islamic Knowledge", "Quran, Hadith, Duas & Sunnah", "☪️ Knowledge"),
-              "tiny-trader": ("Tiny Trader", "Interactive trading learning game", "🎮 Education"),
-              "xauusd-ai-terminal": ("XAUUSD AI Terminal", "AI-powered Gold trading dashboard", "📊 Trading"),
-              "XAUUSD-Lot-Size-Calculator": ("XAUUSD Lot Size Calculator", "Risk-based position sizing", "🧮 Trading Tool"),
-              "XTIUSD-Live-News": ("XTIUSD Live News", "Live WTI market news & updates", "📰 Market Data"),
+              "india-post-office-finder": ("India Post Office Finder", "Find PIN codes & post offices", "Utility"),
+              "islamic-knowledge": ("Islamic Knowledge", "Quran, Hadith, Duas & Sunnah", "Knowledge"),
+              "tiny-trader": ("Tiny Trader", "Interactive trading learning game", "Education"),
+              "xauusd-ai-terminal": ("XAUUSD AI Terminal", "AI-powered Gold trading dashboard", "Trading"),
+              "XAUUSD-Lot-Size-Calculator": ("XAUUSD Lot Size Calculator", "Risk-based position sizing", "Trading Tool"),
+              "XTIUSD-Live-News": ("XTIUSD Live News", "Live WTI market news & updates", "Market Data"),
               "XTIUSD-Lot-Size-Calculator": ("XTIUSD Lot Size Calculator", "Crude Oil lot & swap calculator", "🧮 Trading Tool"),
           }
 
           def fallback(repo):
-              return repo["name"].replace("-", " "), (repo.get("description") or "Open-source project").replace("|", "\\|"), "🧪 Project"
+              return repo["name"].replace("-", " "), (repo.get("description") or "Open-source project").replace("|", "\\|"), "Project"
 
           rows = [
               "| Project | What it does | Type | Repository | Live Project |",
