@@ -97,14 +97,18 @@ jobs:
               return display, description, "🧪 Project"
 
           rows = [
-              "| Project | What it does | Type |",
-              "|---|---|---|",
+              "| Project | What it does | Type | Repository | Live |",
+              "|---|---|---|---|---|",
           ]
 
           for repo in public_repos:
               name = repo["name"]
               display, description, kind = projects.get(name, fallback(repo))
-              rows.append(f"| **{display}** | {description} | {kind} |")
+              repo_url = repo["html_url"]
+              live_url = repo.get("homepage") or f"https://{owner.lower()}.github.io/{name}/"
+              rows.append(
+                  f"| **{display}** | {description} | {kind} | [Repo]({repo_url}) | [Live]({live_url}) |"
+              )
 
           new_section = "\n".join(rows)
 
