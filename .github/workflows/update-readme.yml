@@ -53,51 +53,20 @@ jobs:
           ]
 
           projects = {
-              "india-post-office-finder": (
-                  "India Post Office Finder",
-                  "Find PIN codes & post offices",
-                  "🇮🇳 Utility",
-              ),
-              "islamic-knowledge": (
-                  "Islamic Knowledge",
-                  "Quran, Hadith, Duas & Sunnah",
-                  "☪️ Knowledge",
-              ),
-              "tiny-trader": (
-                  "Tiny Trader",
-                  "Interactive trading learning game",
-                  "🎮 Education",
-              ),
-              "xauusd-ai-terminal": (
-                  "XAUUSD AI Terminal",
-                  "AI-powered Gold trading dashboard",
-                  "📊 Trading",
-              ),
-              "XAUUSD-Lot-Size-Calculator": (
-                  "XAUUSD Lot Size Calculator",
-                  "Risk-based position sizing",
-                  "🧮 Trading Tool",
-              ),
-              "XTIUSD-Live-News": (
-                  "XTIUSD Live News",
-                  "Live WTI market news & updates",
-                  "📰 Market Data",
-              ),
-              "XTIUSD-Lot-Size-Calculator": (
-                  "XTIUSD Lot Size Calculator",
-                  "Crude Oil lot & swap calculator",
-                  "🧮 Trading Tool",
-              ),
+              "india-post-office-finder": ("India Post Office Finder", "Find PIN codes & post offices", "🇮🇳 Utility"),
+              "islamic-knowledge": ("Islamic Knowledge", "Quran, Hadith, Duas & Sunnah", "☪️ Knowledge"),
+              "tiny-trader": ("Tiny Trader", "Interactive trading learning game", "🎮 Education"),
+              "xauusd-ai-terminal": ("XAUUSD AI Terminal", "AI-powered Gold trading dashboard", "📊 Trading"),
+              "XAUUSD-Lot-Size-Calculator": ("XAUUSD Lot Size Calculator", "Risk-based position sizing", "🧮 Trading Tool"),
+              "XTIUSD-Live-News": ("XTIUSD Live News", "Live WTI market news & updates", "📰 Market Data"),
+              "XTIUSD-Lot-Size-Calculator": ("XTIUSD Lot Size Calculator", "Crude Oil lot & swap calculator", "🧮 Trading Tool"),
           }
 
           def fallback(repo):
-              name = repo["name"]
-              display = name.replace("-", " ")
-              description = (repo.get("description") or "Open-source project").replace("|", "\\|")
-              return display, description, "🧪 Project"
+              return repo["name"].replace("-", " "), (repo.get("description") or "Open-source project").replace("|", "\\|"), "🧪 Project"
 
           rows = [
-              "| Project | What it does | Type | Repository | Live |",
+              "| Project | What it does | Type | Repository | Live Webpage |",
               "|---|---|---|---|---|",
           ]
 
@@ -107,7 +76,7 @@ jobs:
               repo_url = repo["html_url"]
               live_url = repo.get("homepage") or f"https://{owner.lower()}.github.io/{name}/"
               rows.append(
-                  f'| **{display}** | {description} | {kind} | <a href="{repo_url}" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="{live_url}" target="_blank" rel="noopener noreferrer">Live</a> |'
+                  f'| **{display}** | {description} | {kind} | <a href="{repo_url}" target="_blank" rel="noopener noreferrer">Repo</a> | <a href="{live_url}" target="_blank" rel="noopener noreferrer">Live Webpage</a> |'
               )
 
           new_section = "\n".join(rows)
